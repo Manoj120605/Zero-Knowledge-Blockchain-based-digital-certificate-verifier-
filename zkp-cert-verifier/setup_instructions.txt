@@ -1,0 +1,72 @@
+
+ZKP Certificate Verifier - Setup Instructions
+============================================
+
+Prerequisites:
+- Java 17 or higher
+- Node.js 18+ and npm/yarn
+- MySQL 8.0
+- Docker and Docker Compose (optional)
+- Git
+
+Quick Setup (5 minutes):
+
+1. Clone and Setup:
+   ```bash
+   git clone <repository-url>
+   cd zkp-certificate-verifier
+   chmod +x scripts/setup.sh
+   ./scripts/setup.sh
+   ```
+
+2. Database Setup:
+   ```bash
+   # Start MySQL (or use Docker)
+   docker-compose -f database/docker-compose.yml up -d
+
+   # Initialize database
+   mysql -u root -p < database/schema/init.sql
+   ```
+
+3. Backend Setup:
+   ```bash
+   cd backend
+   # Install Maven Daemon for faster builds
+   curl -s "https://get.sdkman.io" | bash
+   sdk install maven
+   sdk install mvnd
+
+   # Build and run
+   mvnd clean install
+   mvnd spring-boot:run
+   ```
+
+4. Blockchain Setup:
+   ```bash
+   cd blockchain
+   npm install
+   npx ganache-cli --deterministic
+   npx truffle migrate --reset
+   ```
+
+5. Frontend Setup:
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+
+6. Access Application:
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:8080/api
+   - Swagger UI: http://localhost:8080/swagger-ui.html
+   - Ganache: http://localhost:8545
+
+Easy Configuration:
+- All configuration in application.properties
+- Environment variables for sensitive data
+- Docker compose for one-command deployment
+- Automated database migrations
+- Pre-configured smart contracts
+
+The setup script handles most dependencies and configurations automatically!

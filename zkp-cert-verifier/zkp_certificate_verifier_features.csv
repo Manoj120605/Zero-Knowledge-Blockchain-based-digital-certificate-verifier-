@@ -1,0 +1,16 @@
+Feature,Description,Technology,Priority
+Zero Knowledge Proof Generation,DIZK library integration for ZKP generation and verification,"DIZK, Java Cryptography",High
+Certificate Upload & Storage,Secure certificate upload with metadata extraction,"Spring Boot, Multipart Upload",High
+Blockchain Verification,Ethereum blockchain for immutable certificate storage,"Web3j, Solidity, Ganache",High
+MySQL Database Integration,JDBC MySQL integration for efficient data management,"Spring Data JPA, MySQL",High
+Professional React UI,Modern React with TypeScript and Material-UI components,"React 18, TypeScript, MUI",High
+Admin Dashboard,Comprehensive admin panel for system management,"React Router, Charts.js",Medium
+User Authentication,JWT-based authentication with role-based access,"Spring Security, JWT",High
+QR Code Generation,QR code generation for easy certificate sharing,"QRCode.js, Canvas API",Medium
+Batch Certificate Processing,Bulk certificate upload and verification capabilities,"Apache Commons, Threading",Low
+API Documentation,Swagger/OpenAPI documentation for all endpoints,"Swagger UI, OpenAPI 3.0",Medium
+Docker Containerization,Docker compose setup for easy deployment,"Docker, Docker Compose",Medium
+Maven Daemon Build,Fast builds using Maven Daemon (mvnd),"Maven Daemon, GraalVM",High
+JUnit Testing,Comprehensive unit and integration testing,"JUnit 5, Mockito, TestNG",High
+Responsive Design,Mobile-first responsive design approach,"CSS Grid, Flexbox, Media Queries",High
+Real-time Verification,Instant verification with visual feedback,"WebSocket, Server-Sent Events",Medium
