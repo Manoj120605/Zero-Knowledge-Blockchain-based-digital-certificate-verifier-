@@ -42,7 +42,7 @@ This project delivers a **privacy-preserving digital certificate verification sy
 
 1. Clone the repository:  
    ```bash  
-   git clone <repository-url>  
+   git clone https://github.com/Manoj120605/Zero-Knowledge-Blockchain-based-digital-certificate-verifier-.git 
    cd zkp-certificate-verifier  
    ```
 2. Start MySQL:  
